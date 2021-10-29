@@ -1,0 +1,11 @@
+fun main() {
+    val simv = mutableListOf<Char>()	//создаём коллекцию
+    for (i:Int in 97..122){       
+        simv.add(i.toChar())		//наполняем ее буквами
+    }
+    println(simv)			//выводим всю коллекцию на экран, для ориентира
+    print ("    ")			//делаем небольшое выравнивение
+    for (g: Int in 0..25 step 2){
+        print(simv[g+1]+"     ")	//выводим только четные буквы
+    }    
+}
